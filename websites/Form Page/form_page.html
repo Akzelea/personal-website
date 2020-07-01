@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kim Do | Form Page</title>
+	<style>
+		body {
+			background-image: url("images/background.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+		#title {
+			text-align: center;
+		}
+		#mainframe {
+			border-style: solid;
+			border-color: black;
+			text-align: left;
+			border-radius: 15px;
+			padding: 20px 40px 20px 40px;
+			margin: auto;
+			width: 490px;
+			background-color: #FBBD85;
+		}
+	</style>
+</head>
+<body>
+<div id="mainframe">
+	<h1 id="title">Make Your Own Sundae!</h1>
+	<br>
+ <form action="confirmation.html">
+ 	<p>
+	 	<label for="text-id"> <strong> Select a Name for Your Sundae: </strong> </label>
+	 	<input type="text" id="text-id" placeholder="ex. Delicious Sparkles">
+ 	</p>
+
+ 	<p>
+	 	<label> <strong> Base for Your Ice Cream: </strong> </label>
+	 	<label>
+	 		<input type="radio" name="radio-name">
+	 		Cup
+	 	</label>
+
+	 	<label>
+	 		<input type="radio" name="radio-name">
+	 		Waffle Cone
+	 	</label>
+
+	 	<label>
+	 		<input type="radio" name="radio-name">
+	 		Waffle Cone Bowl
+	 	</label>
+ 	</p>
+
+ 	<p>
+	 	<label for="dropdown-id"> <strong> Select Ice Cream Flavor: </strong> </label>
+	 	<select id="dropdown-id">
+	 		<option>--Select Flavor--</option>
+	 		<option>Chocolate</option>
+	 		<option>Strawberry</option>
+	 		<option>Vanilla</option>
+	 		<option>Mint Chocolate Chip</option>
+	 		<option>Coffee</option>
+	 		<option>Cookies N'Cream</option>
+	 		<option>Buttered Pecan</option>
+	 		<option>Rocky Road</option>
+	 		<option>Fruity Rainbow Sherbet</option>
+	 	</select>
+ 	</p>
+
+ 	<p>
+ 	<label for="dropdown-id"> <strong> Select Syrup Flavor:</strong></label>
+ 	<select id="dropdown-id">
+ 		<option>--Select Flavor--</option>
+ 		<option>Chocolate Syrup</option>
+ 		<option>Strawberry Syrup</option>
+ 		<option>Caramel Syrup</option>
+ 		<option>Hot Fudge</option>
+ 		<option>No Syrup</option>
+ 	</select>
+ 	</p>
+
+ 	<p>
+	 	<label> <strong> Select Toppings: </strong> </label>
+
+		<br>
+
+	 	<label>
+	 		<input type="checkbox">
+	 		Rainbow Sprinkles
+	 	</label>
+
+	 	<br>
+
+	 	<label>
+	 		<input type="checkbox">
+	 		Crumbled Oreos
+	 	</label>
+
+	 	<br>
+
+	 	<label>
+	 		<input type="checkbox">
+	 		Whipped Cream
+	 	</label>
+
+	 	<br>
+
+	 	<label>
+	 		<input type="checkbox">
+	 		Peanuts
+	 	</label>
+
+	 	<br>
+
+	 	<label>
+	 		<input type="checkbox">
+	 		Gummy Bears
+	 	</label>
+
+	 	<br>
+
+	 	<label>
+	 		<input type="checkbox">
+	 		Peanut Butter Cups
+	 	</label>
+
+	 	<br>
+
+	  	<label>
+	 		<input type="checkbox">
+	 		Bananas
+	 	</label>
+
+	 	<br>
+
+	  	<label>
+	 		<input type="checkbox">
+	 		Cherries
+	 	</label>
+    </p>
+
+    <p>
+	 	<label for="textarea-id"> <strong> Additional Instructions for Order: </strong> </label>
+	 	<textarea id="textarea-id" rows="6" cols="60" placeholder="List any allergies, amount of specific toppings, etc."></textarea>
+    </p>
+
+    <label>
+    	<input type="checkbox">
+    	I accept Terms & Conditions
+    </label>
+
+    <p>
+	 	<button type="submit">Submit Order</button>
+	 	<button type="reset">Reset Order</button>
+	</p>
+
+ </form>
+</div>
+</body>
+</html>

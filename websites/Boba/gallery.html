@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Kim Do | Gallery Page </title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Molengo&display=swap" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css?family=Kalam&display=swap" rel="stylesheet">
+
+<style>
+	#header {
+		background-image: url("images/gallery-header.png");
+		background-size:cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		text-align: center;		
+		padding-top: 50px;
+		padding-bottom: 50px;
+		margin-bottom: 0px;
+		margin-top: 0px;
+	}
+	h1 {
+		font-size: 40px;
+		color: white;
+		font-family: "Photoshoot";
+		background-color: black;
+		border-radius:50px;
+		padding-top: 45px;
+		padding-bottom: 30px;
+		width: 400px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	h2 {
+		font-family: "Photoshoot";
+		text-align: center;
+		margin: auto;
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+
+	#bigger_container {
+		width: 1075px;
+		margin-left: auto;
+		margin-right: auto;
+		background-color: #FFC49E;
+		border-style: solid;
+		height: auto;
+		padding: 10px;
+		border-color: black;
+	}
+
+	#photo-1 {
+		float: left;
+		margin: 10px;
+		background-color: #FFEDDF;
+		border-color: black;
+		border-style: solid;
+		width: 725px;
+		height: 300px;
+		position: relative;
+	}
+	#photo-2 {
+		float: left;
+		margin: 10px;
+		background-color: #FFEDDF;
+		border-color: black;
+		border-style: solid;
+		width: 300px;
+		height: 300px;
+		position: relative;		
+	}
+	#photo-3 {
+		float: left;
+		margin: 10px;
+		background-color: #FFEDDF;
+		border-color: black;
+		border-style: solid;
+		width: 250px;
+		height: 250px;
+		position: relative;
+	}
+	#photo-4 {
+		float: left;
+		margin: 10px;
+		background-color: #FFEDDF;
+		border-color: black;
+		border-style: solid;
+		width: 250px;
+		height: 250px;
+		position: relative;
+	}
+	#photo-5 {
+		float: right;
+		margin: 10px;
+		background-color: #FFEDDF;
+		border-color: black;
+		border-style: solid;
+		width: 500px;
+		height: 525px;
+		position: relative;
+	}
+	#photo-6 {
+		float: left;
+		margin: 10px;
+		background-color: #FFEDDF;
+		border-color: black;
+		border-style: solid;
+		width: 250px;
+		height: 250px;
+		position: relative;
+	}
+	#photo-7 {
+		float: left;
+		margin: 10px;
+		background-color: #FFEDDF;
+		border-color: black;
+		border-style: solid;
+		width:250px;
+		height:250px;
+		position: relative;
+	}
+	#photo-8 {
+		float: left;
+		margin: 10px;
+		background-color: #FFEDDF;
+		border-color: black;
+		border-style: solid;
+		width: 333px;
+		height: 335px;
+		position: relative;
+	}
+	#photo-9 {
+		float: left;
+		margin: 10px;
+		background-color: #FFEDDF;
+		border-color: black;
+		border-style: solid;
+		width: 333px;
+		height: 335px;
+		position: relative;
+	}
+	#photo-10 {
+		float: left;
+		margin: 10px;
+		background-color: #FFEDDF;
+		border-color: black;
+		border-style: solid;
+		width: 333px;
+		height: 335px;
+		position: relative;
+	}
+
+	img {
+		height: 100%;
+		width: 100%;
+
+	}
+
+	.caption-overlay-set-1 {
+		width: 100%;
+		height: 160px;
+		background-color: rgba(0,0,0,0.5);
+		position: absolute;
+		font-family: "Kalam";
+		top: 0;
+		color: white;
+		text-align: center;
+		padding-top: 140px;
+		font-size: 40px;
+		visibility: hidden;
+	}
+	.caption-overlay-set-2 {
+		width: 100%;
+		height: 160px;
+		background-color: rgba(0,0,0,0.5);
+		position: absolute;
+		font-family: "Kalam";
+		top: 0;
+		color: white;
+		text-align: center;
+		padding-top: 140px;
+		font-size: 35px;
+		visibility: hidden;
+	}
+	.caption-overlay-set-3 {
+		width: 100%;
+		height: 135px;
+		background-color: rgba(0,0,0,0.5);
+		position: absolute;
+		font-family: "Kalam";
+		top: 0;
+		color: white;
+		text-align: center;
+		padding-top: 115px;
+		font-size: 30px;
+		visibility: hidden;
+	}
+	.caption-overlay-set-4 {
+		width: 100%;
+		height: 295px;
+		background-color: rgba(0,0,0,0.5);
+		position: absolute;
+		font-family: "Kalam";
+		top: 0;
+		color: white;
+		text-align: center;
+		padding-top: 230px;
+		font-size: 60px;
+		visibility: hidden;
+	}
+	.caption-overlay-set-5 {
+		width: 100%;
+		height: 177.5px;
+		background-color: rgba(0,0,0,0.5);
+		position: absolute;
+		font-family: "Kalam";
+		top: 0;
+		color: white;
+		text-align: center;
+		padding-top: 157.5px;
+		font-size: 35px;
+		visibility: hidden;
+	}
+
+	#photo-1:hover .caption-overlay-set-1 {
+		visibility: visible;
+	}
+	#photo-2:hover .caption-overlay-set-2 {
+		visibility: visible;
+	}
+	#photo-3:hover .caption-overlay-set-3 {
+		visibility: visible;
+	}
+	#photo-4:hover .caption-overlay-set-3 {
+		visibility: visible;
+	}
+	#photo-5:hover .caption-overlay-set-4 {
+		visibility: visible;
+	}
+	#photo-6:hover .caption-overlay-set-3 {
+		visibility: visible;
+	}
+	#photo-7:hover .caption-overlay-set-3 {
+		visibility: visible;
+	}
+	#photo-8:hover .caption-overlay-set-5 {
+		visibility: visible;
+	}
+	#photo-9:hover .caption-overlay-set-5 {
+		visibility: visible;
+	}
+	#photo-10:hover .caption-overlay-set-5 {
+		visibility: visible;
+	}
+</style>
+
+</head>
+<body>
+	<div id="header">
+		<h1>Photo Gallery</h1>
+	</div>
+
+	<div id="navigationbar">
+		<a href="assignment_06.html"> Home </a>
+		<a href="gallery.html"> Photo Gallery </a>
+		<a hred="#"> Facts </a>
+		<a href="#"> Blog </a>
+		<a href="#"> Contact </a>
+
+		<div class="clearfloat"></div>
+	</div>
+
+	<div id="bigger_container">
+
+		<h2>Other Boba Shops</h2>
+
+		<div id="photo-1">
+			<img src="images/photo_gallery/cafe.jpg" alt="Cafe">
+			<div class="caption-overlay-set-1">Cafe Boba</div>
+		</div>
+
+		<div id="photo-2">
+			<img src="images/photo_gallery/sharetea.jpg" alt="Share Tea">
+			<div class="caption-overlay-set-2">Share Tea</div>
+		</div>
+
+		<div id="photo-3">
+			<img src="images/photo_gallery/teabar.jpg" alt="Tea Bar">
+			<div class="caption-overlay-set-3">Tea Bar</div>
+		</div>
+
+		<div id="photo-4">
+			<img src="images/photo_gallery/ftb.jpg" alt="Factory Tea Bar">
+			<div class="caption-overlay-set-3">Factory Tea Bar</div>
+		</div>
+
+		<div id="photo-5">
+			<img src="images/photo_gallery/tigersugar.jpg" alt="Tiger Sugar" >
+			<div class="caption-overlay-set-4">Tiger Sugar</div>
+		</div>
+
+		<div id="photo-6">
+			<img src="images/photo_gallery/bubbleu.jpg" alt="Bubble U">
+			<div class="caption-overlay-set-3">Bubble U Tea</div>
+		</div>
+
+		<div id="photo-7">
+			<img src="images/photo_gallery/bobalatte.jpg" alt="Boba Latte">
+			<div class="caption-overlay-set-3">Boba Latte</div>
+		</div>
+
+		<div id="photo-8">
+			<img src="images/photo_gallery/sunrighttea.jpg" alt="Sunright Tea">
+			<div class="caption-overlay-set-5">Sunright Tea</div>
+		</div>
+
+		<div id="photo-9">
+			<img src="images/photo_gallery/snowmonster.jpg" alt="Snow Monster">
+			<div class="caption-overlay-set-5">Snow Monster</div>
+		</div>
+
+		<div id="photo-10">
+			<img src="images/photo_gallery/urbanritual.jfif" alt="Urban Ritual">
+			<div class="caption-overlay-set-5">Urban Ritual</div>
+		</div>
+
+		<div class="clearfloat"></div>
+	</div>
+
+	<div id="footer">
+		<p>Kim Do - University of Southern California &copy; 2020</p>
+	</div>
+</body>
+</html>

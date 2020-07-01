@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kim Do | Resume</title>
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+<div class="resume-background-image">
+	<div class="header">
+		<!--Navigation Bar -->
+		<div class="navigation-bar">
+			<!--Logo-->
+			<a href="index.html" class="logo"> K </a>
+			<!--Right Navigation Bar-->
+			<div class="right-bar">
+				<ul>
+					<li><a href="about_me.html">About Me</a></li>
+					<li><a href="resume.html">Resume</a></li>
+					<li><a href="projects.html">Projects</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<!--Title-->
+	<div class="resume-title">
+		<h1>Resume</h1>
+	</div>
+
+</div>
+
+    <div class="skills">
+
+      <div class="skill">
+        <div class="skill-name">Microsoft Office (Word, Powerpoint, Excel)</div>
+        <div class="skill-bar">
+          <div class="skill-percent" percent="90"></div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-name">HTML/CSS</div>
+        <div class="skill-bar">
+          <div class="skill-percent" percent="70"></div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-name">AutoCAD</div>
+        <div class="skill-bar">
+          <div class="skill-percent" percent="50"></div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-name">C++/Arduino</div>
+        <div class="skill-bar">
+          <div class="skill-percent" percent="40"></div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-name">Python</div>
+        <div class="skill-bar">
+          <div class="skill-percent" percent="30"></div>
+        </div>
+      </div>
+
+    </div>
+
+    <script>
+      $('.skill-percent').each(function(){
+        var $this = $(this);
+        var percent = $this.attr('percent');
+        $this.css("width",percent+'%');
+        $({animatedValue: 0}).animate({animatedValue: percent},{
+          duration: 1000,
+          step: function(){
+            $this.attr('percent', Math.floor(this.animatedValue) + '%');
+          },
+          complete: function(){
+            $this.attr('percent', Math.floor(this.animatedValue) + '%');
+          }
+        });
+      });
+    </script>
+
+    <div class="resume">
+    	<embed src="files/Kim Do Freshman College Resume Spring 2020.pdf" width="900px" height="500px" />
+	</div>
+
+	<div class="pdf-button">
+		<a href="files/Kim Do Freshman College Resume Spring 2020.pdf" target="_blank"><p>View in New Window</p></a>		
+	</div>
+
+
+</body>

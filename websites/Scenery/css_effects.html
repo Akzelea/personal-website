@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Kim Do | CSS Effects</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+
+	<style>
+		body {
+			background-color: #FFD9B4;
+		}
+
+		h1 {
+			font-size: 60pt;
+			text-align: center;
+			font-family: 'Indie Flower';
+		}
+
+		h2 {
+			font-size: 26pt;
+			text-align: center;
+			margin-bottom: 50px;
+			font-family: 'Indie Flower';
+		}
+
+		#container {
+			width: 1000px;
+			height: 1000px;
+			margin: 70px auto;
+		}
+
+
+		#gallery1 {
+			margin: 10px auto;
+			position: relative;
+			width: 800px;
+			height: 350px;
+		}
+		#gallery1 img {
+			position: absolute;
+			width: 30%;
+			transition: all 0.8s 0s;
+			border-style: solid;
+			border-color: white;
+			border-width: 10px;
+		}
+
+		#photo1 {
+			transform: translate(0px, 0px);
+		}
+		#photo2 {
+			transform: translate(20px, 10px) rotate(90deg);
+		}
+		#photo3 {
+			transform: translate(40px, -10px) rotate(180deg);
+		}
+
+		#gallery1:hover #photo1 {
+			transform: translate(10px, 0px);
+		}
+		#gallery1:hover #photo2 {
+			transform: translate(280px, 0px) rotate(0deg);
+		}
+		#gallery1:hover #photo3 {
+			transform: translate(550px, 0px) rotate(0deg);
+		}
+
+
+		#gallery2 {
+			margin: 30px auto;
+			position: relative;
+			width: 800px;
+		}
+		#gallery2 img {
+			width: 30%;
+			position: absolute;
+			transition: transform 0.8s 0s;
+			border-style: solid;
+			border-color: white;
+			border-width: 10px;
+		}
+
+		#photo4 {
+			transform: translate(0px, 0px);
+		}
+		#photo5 {
+			transform: translate(20px, 10px);
+		}
+		#photo6 {
+			transform: translate(40px, -10px);
+		}
+
+		#gallery2:hover #photo4 {
+			transform: translate(10px, 0px);
+		}
+		#gallery2:hover #photo5 {
+			transform: translate(280px, 0px);
+		}
+		#gallery2:hover #photo6 {
+			transform: translate(550px, 0px);
+		}
+		
+	</style>
+</head>
+<body>
+
+	<h1>Beautiful Scenery</h1>
+
+	<div id="container">
+
+		<h2>Japan: Cherry Blossoms</h2>
+		<div id="gallery1">
+			<img id="photo1" src="images/japan1.jpg" alt="japan1">
+			<img id="photo2" src="images/japan2.jpg" alt="japan2">
+			<img id="photo3" src="images/japan3.jpeg" alt="japan3">
+		</div>
+
+		<h2>Beaches: Glowing Sunsets</h2>
+		<div id="gallery2">
+			<img id="photo4" src="images/beach1.jpg" alt="beach1">
+			<img id="photo5" src="images/beach2.jpg" alt="beach2">
+			<img id="photo6" src="images/beach3.jpg" alt="beach3">
+		</div>
+
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title> Kim Do | Simple Photo Gallery </title>
+</head>
+
+<style>
+
+	html {
+		margin: 0px;
+	}
+
+	body {
+		margin: 0px;
+	}
+
+	#title {
+		background-image: url(images/background.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		padding-top: 60px;
+		height: 220px;
+		text-align: center;
+		color: white;
+		width: 100%;
+		letter-spacing: 20px;
+		font-size: 200%;
+		font-family: verdana;
+	}
+
+	h1 {
+		padding-bottom: 15px;
+	}
+
+	#container {
+		background-color: black;
+		color: white;
+		margin: auto;
+	}
+
+	h2 {
+		font-size: 30px;
+		font-family: verdana;
+		letter-spacing: 5px;
+		text-align: center;
+		margin-top: 50px;
+		margin-bottom: 50px;
+	}
+
+	#gallery {
+		width: 90%;
+		margin: auto;
+	}
+
+	.photo {
+		float: left;
+		text-align: center;
+		margin: 20px;
+		width: 30%;
+	}
+
+	.photo p {
+		visibility: hidden;
+		font-size: 20px;
+	}
+	.photo img {
+		width: 100%;
+		opacity: 0.6;
+	}
+
+	.photo:hover img {
+		opacity: 1;
+	}
+
+	.photo:hover p {
+		visibility: visible;
+	}
+
+	.clearfloat {
+		clear: both;
+	}
+
+
+
+</style>
+
+<body>
+	<div id="container">
+
+		<div id="title">
+			<h1> ASTROPHOTOGRAPHY </h1>
+		</div>
+
+		<h2> PHOTO GALLERY </h2>
+
+		<div id="gallery">
+
+			<div class="photo">
+				<img src="images/bubble_nebula.jpg" alt="Bubble Nebula">
+				<p>Bubble Nebula</p>
+			</div>
+
+			<div class="photo">
+				<img src="images/milky_way.jfif" alt="Milky Way">
+				<p>Milky Way</p>
+			</div>
+
+			<div class="photo">
+				<img src="images/HD_139139_stars.jpg" alt="HD 139139 Stars">
+				<p>HD 139139 Stars</p>
+			</div>
+
+			<div class="photo">
+				<img src="images/horsehead_nebula.jpg" alt="Horsehead Nebula">
+				<p>Horsehead Nebula</p>
+			</div>
+
+			<div class="photo">
+				<img src="images/star_cluster_ngc_602.jpg" alt="Star Cluster NGC 602">
+				<p>Star Cluster NGC 602</p>
+			</div>
+
+			<div class="photo">
+				<img src="images/faint_blue_galaxy.jpg" alt="Faint Blue Galaxy">
+				<p>Faint Blue Galaxy</p>
+			</div>
+
+			<div class="photo">
+				<img src="images/orion_nebula.jpg" alt="Orion Nebula">
+				<p>Orion Nebula</p>
+			</div>
+
+			<div class="photo">
+				<img src="images/sharpless_2-106.jpg" alt="Sharpless 2-106">
+				<p>Sharpless 2-106</p>
+			</div>
+
+			<div class="photo">
+				<img src="images/the_pillars_of_creation.jpg" alt="The Pillars of Creation">
+				<p>The Pillars of Creation</p>
+			</div>
+
+			<div class="photo">
+				<img src="images/v838_monocerotis.jpg" alt="V838 Monocerotis">
+				<p>V838 Monocerotis</p>
+			</div>
+
+			<div class="photo">
+				<img src="images/mystic_mountain.jpg" alt="Mystic Mountain">
+				<p>Mystic Mountain</p>
+			</div>
+
+			<div class="photo">
+				<img src="images/helix_nebula.jpg" alt="Helix Nebula">
+				<p>Helix Nebula</p>
+			</div>
+
+		</div>
+
+		<div class="clearfloat"></div>
+
+</div>
+
+</body>
+</html>

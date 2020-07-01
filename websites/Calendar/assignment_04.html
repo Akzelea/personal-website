@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Kim Do | Calendar </title>
+
+	<style>
+		body {
+			padding-top: 50px;
+			padding-bottom: 50px;
+			background-color: #FF5AB6;
+		}
+		table {
+			border-width: 1px;
+			border-style: solid;
+			border-color: black;
+			border-collapse: collapse;
+			width: 1100px;
+			margin:auto;
+		}
+		td{
+			border-width: 1px;
+			border-style: solid;
+			border-color: black;
+			width: 120px;
+			padding: 10px;
+			vertical-align: text-top;
+			text-align: right;
+			height: 100px;
+			font-size: 15pt;
+			background-color: #FBC9F0;
+
+		}
+		th{
+			border-width: 1px;
+			border-style: solid;
+			border-color: black;
+			background-color: #FF78D8;
+			color: black;
+			padding: 10px;
+		}
+		#month {
+			background-image: url("images/background2.jpg");
+			background-size: cover;
+			width: 1100px;
+			height: 200px;
+			margin: auto;
+			text-align: center;
+			padding-top: 20px;
+			font-size: 30pt;
+			background-position: center;
+			border-width: 1px;
+			border-style: solid;
+			border-color: black;
+		}
+		.faded {
+			color: grey;
+		}
+		.holiday {
+			font-size: 15pt;
+			padding: 5px;
+			font-family: verdana;
+			vertical-align: middle;
+			margin: auto;
+			text-align: center;
+			background-color: black;
+			opacity: 70%;
+			color: white;
+			border-radius: 20px;
+		}
+		#birthday {
+			background-image: url("images/birthday.jpg");
+			background-size: cover;
+			font-weight: bold;
+		}
+		#passover {
+			background-image: url("images/passover.jpg");
+			background-size: cover;
+			font-weight: bold;
+		}
+		#easter {
+			background-image: url("images/easter.jpg");
+			background-size: cover;
+			font-weight: bold;
+		}
+		#earths_day {
+			background-image: url("images/earthsday.jpg");
+			background-size: cover;
+			font-weight: bold;
+		}
+	</style>
+</head>
+<body>
+	<div id="calendar">
+		<div id="month">
+			<h1> April 2020 </h1>
+		</div>
+
+		<table>
+			<tr>
+				<th> Sunday </th>
+				<th> Monday </th>
+				<th> Tuesday </th>
+				<th> Wednesday </th>
+				<th> Thursday </th>
+				<th> Friday </th>
+				<th> Saturday </th>
+			</tr>
+
+			<tr>
+				<td class="faded"> 29 </td>
+				<td class="faded"> 30 </td>
+				<td class="faded"> 31 </td>
+				<td> 1 </td>
+				<td> 2 </td>
+				<td> 3 </td>
+				<td> 4 </td>
+			</tr>
+
+			<tr>
+				<td> 5 </td>
+				<td> 6 </td>
+				<td> 7 </td>
+				<td id="birthday"> 8 
+					<div class="holiday">
+						Kim's Birthday
+					</div>
+				</td>
+				<td id="passover"> 9 
+					<div class="holiday">
+						Passover
+					</div>
+				</td>
+				<td> 10 </td>
+				<td> 11 </td>
+			</tr>
+
+			<tr>
+				<td id="easter"> 12 
+					<div class="holiday">
+						Easter
+					</div>
+				</td>
+
+				<td> 13 </td>
+				<td> 14 </td>
+				<td> 15 </td>
+				<td> 16 </td>
+				<td> 17 </td>
+				<td> 18 </td>
+			</tr>
+
+			<tr>
+				<td> 19 </td>
+				<td> 20 </td>
+				<td> 21 </td>
+				<td id="earths_day"> 22 
+					<div class="holiday">
+						Earth's Day
+					</div>
+				</td>
+				<td> 23 </td>
+				<td> 24 </td>
+				<td> 25 </td>
+			</tr>
+
+			<tr>
+				<td> 26 </td>
+				<td> 27 </td>
+				<td> 28 </td>
+				<td> 29 </td>
+				<td> 30 </td>
+				<td class="faded"> 1 </td>
+				<td class="faded"> 2 </td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>

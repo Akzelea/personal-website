@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Kim Do | Javascript Plugin </title>
+
+	<link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
+
+	<style>
+		body, html {
+			padding-bottom: 40px;
+		}
+		h1 {
+			font-family: "Dancing Script";
+			font-size: 60px;
+			text-align: center;
+		}
+
+		#puzzle {
+			width: 1220px;
+			height: auto;
+			margin: auto;
+		}
+
+		.piece {
+			padding: 0;
+			float: left;
+			width: 300px;
+			height: 300px;
+		}
+
+		#R1C1 {
+			position: relative;
+			right: 15px;
+			top: 10px;
+			box-shadow: 10px 10px 10px grey;
+		}
+
+		#R2C2 {
+			position: relative;
+			left: 10px;
+			top: 10px;
+			box-shadow: 10px 10px 10px grey;
+		}
+
+		#R1C3 {
+			position: relative;
+			left: 5px;
+			bottom: 10px;
+			box-shadow: 10px 10px 10px grey;
+		}
+
+		#R2C4 {
+			position: relative;
+			right: 15px;
+			top: 10px;
+			box-shadow: 10px 10px 10px grey;
+		}
+
+		.clearfloat {
+			clear: both;
+		}
+		
+	</style>
+</head>
+<body>
+	<div id="puzzle">
+
+		<h1> Paris Puzzle </h1>
+
+			<img src="images/row-1-col-1.jpg" alt="row 1 column 1" class="piece" id="R1C1">
+			<img src="images/row-1-col-2.jpg" alt="row 1 column 2" class="piece" id="R1C2">
+			<img src="images/row-1-col-3.jpg" alt="row 1 column 3" class="piece" id="R1C3">
+			<img src="images/row-1-col-4.jpg" alt="row 1 column 4" class="piece" id="R1C4">
+
+			<div class="clearfloat"></div>
+
+			<img src="images/row-2-col-1.jpg" alt="row 2 column 1" class="piece" id="R2C1">
+			<img src="images/row-2-col-2.jpg" alt="row 2 column 2" class="piece" id="R2C2">
+			<img src="images/row-2-col-3.jpg" alt="row 2 column 3" class="piece" id="R2C3">
+			<img src="images/row-2-col-4.jpg" alt="row 2 column 4" class="piece" id="R2C4">
+	</div>
+
+
+	<script   src="https://code.jquery.com/jquery-3.4.1.min.js"   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="   crossorigin="anonymous"></script>
+
+	<script src="https://unpkg.com/draggabilly@2/dist/draggabilly.pkgd.min.js"></script>
+
+	<script>
+	var $draggable = $('img').draggabilly({
+		})
+	</script>
+
+
+
+
+</body>
+</html>
